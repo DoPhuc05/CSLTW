@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Thương Mại Điện Tử</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Header */
+    header {
+      background-color: #f2ff02; 
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ffffff; /* Màu xanh */
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      font-size: 18px;
+      color: #000000; /* Màu vàng để nổi bật */
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Layout structure */
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex: 1;
+    }
+
+    /* Sidebar 1 (Aside 1) */
+    .aside1 {
+      width: 20%;
+      background-color: #ffb7ca; 
+      padding: 20px;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      background-color: #c572ce; 
+      padding: 20px;
+    }
+
+    /* Sidebar 2 (Aside 2) */
+    .aside2 {
+      width: 20%;
+      background-color: #7aff94; 
+      padding: 20px;
+      color: #000000; 
+    }
+
+    /* Sidebar links */
+    .aside1 ul, .aside2 ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .aside1 li, .aside2 li {
+      padding: 10px;
+    }
+
+    .aside1 a, .aside2 a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .aside2 a {
+      color: #ffcc00; /* Màu vàng để phù hợp với nền đen */
+    }
+
+    .aside1 a:hover, .aside2 a:hover {
+      color: #ff0000; /* Màu đỏ khi di chuột qua */
+    }
+
+    /* Buttons */
+    button {
+      padding: 10px 20px;
+      background-color: #ff0000; /* Nút màu đỏ */
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #cc0000; /* Đậm hơn khi di chuột */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>Trang Thương Mại Điện Tử</header>
+
+    <!-- Content layout -->
+    <div class="content-wrapper">
+      <!-- Sidebar 1 (Aside 1) -->
+      <aside class="aside1">
+        <h2>Danh Mục</h2>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <h1>Chào Mừng Đến Với Trang Thương Mại Điện Tử</h1>
+        <p>Trang web của chúng tôi cung cấp nhiều loại sản phẩm từ điện tử, thời trang, đến đồ gia dụng. Khám phá ngay những ưu đãi độc quyền cho khách hàng mới và nhận khuyến mãi đặc biệt!</p>
+        <button>Mua Ngay</button>
+      </main>
+
+      <!-- Sidebar 2 (Aside 2) -->
+      <aside class="aside2">
+        <h2>Cập Nhật</h2>
+        <ul>
+          <li><a href="#">Sản phẩm mới</a></li>
+          <li><a href="#">Ưu đãi hôm nay</a></li>
+          <li><a href="#">Giao hàng miễn phí</a></li>
+          <li><a href="#">Chính sách hoàn trả</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>© 2024 Trang Thương Mại Điện Tử. Mọi quyền được bảo lưu.</footer>
+</div>
+</body>
+</html>

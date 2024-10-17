@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiệm Cơm Chiên</title>
+    <link rel="stylesheet" href="bai9.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo và Banner trên cùng một hàng -->
+        <div class="header-banner">
+            <div class="logo">
+                <img src="banner.jpg" alt="Tiệm Cơm Chiên Banner" width="25%" height="200">
+            </div>
+            <div class="banner">
+                <h1>Tiệm Cơm Chiên</h1>
+            </div>
+        </div>
+        
+        <!-- Head-link -->
+        <div class="head-link">
+            <div class="left-links">
+                <a href="#">Trang Chủ</a>
+                <a href="#">Cơm Chiên Đặc Biệt</a>
+                <a href="#">Cơm Chiên Hải Sản</a>
+                <a href="#">Cơm Chiên Gà</a>
+                <a href="#">Cơm Chiên Rau Củ</a>
+            </div>
+            <div class="right-links">
+                <a href="#">Đăng Nhập</a>
+                <a href="#">Giỏ Hàng</a>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main">
+            <!-- Left Sidebar -->
+            <div class="left-sidebar">
+                <h2>Danh Mục Sản Phẩm</h2>
+                <ul>
+                    <li><a href="#">Cơm Chiên Đặc Biệt</a></li>
+                    <li><a href="#">Cơm Chiên Hải Sản</a></li>
+                    <li><a href="#">Cơm Chiên Gà</a></li>
+                    <li><a href="#">Cơm Chiên Rau Củ</a></li>
+                </ul>
+            </div>
+            
+            <!-- Content Area -->
+            <div class="content">
+                <!-- Cơm Chiên Đặc Biệt -->
+                <h2>Cơm Chiên Đặc Biệt</h2>
+                <div class="product">
+                    <h3>Cơm Chiên Hoàng Gia</h3>
+                    <p>Giá: 150,000 VNĐ</p>
+                    <img src="com-chien-1.jpg" alt="Cơm Chiên Hoàng Gia" width="200px">
+                    <button class="buy-now">Mua Ngay</button>
+                </div>
+                <div class="product">
+                    <h3>Cơm Chiên Thập Cẩm</h3>
+                    <p>Giá: 120,000 VNĐ</p>
+                    <img src="com-chien-2.jpg" alt="Cơm Chiên Thập Cẩm" width="200px">
+                    <button class="buy-now">Mua Ngay</button>
+                </div>
+                <div class="product">
+                    <h3>Cơm Chiên Bò</h3>
+                    <p>Giá: 100,000 VNĐ</p>
+                    <img src="com-chien-3.jpg" alt="Cơm Chiên Bò" width="200px">
+                    <button class="buy-now">Mua Ngay</button>
+                </div>
+
+                <!-- Cơm Chiên Hải Sản -->
+                <h2>Cơm Chiên Hải Sản</h2>
+                <div class="product">
+                    <h3>Cơm Chiên Tôm</h3>
+                    <p>Giá: 130,000 VNĐ</p>
+                    <img src="com-chien-tom.jpg" alt="Cơm Chiên Tôm" width="200px">
+                    <button class="buy-now">Mua Ngay</button>
+                </div>
+                <div class="product">
+                    <h3>Cơm Chiên Cá</h3>
+                    <p>Giá: 140,000 VNĐ</p>
+                    <img src="com-chien-ca.jpg" alt="Cơm Chiên Cá" width="200px">
+                    <button class="buy-now">Mua Ngay</button>
+                </div>
+                <div class="product">
+                    <h3>Cơm Chiên Mực</h3>
+                    <p>Giá: 150,000 VNĐ</p>
+                    <img src="com-chien-muc.jpg" alt="Cơm Chiên Mực" width="200px">
+                    <button class="buy-now">Mua Ngay</button>
+                </div>
+
+                <!-- Cơm Chiên Gà -->
+                <h2>Cơm Chiên Gà</h2>
+                <div class="product">
+                    <h3>Cơm Chiên Gà Rán</h3>
+                    <p>Giá: 90,000 VNĐ</p>
+                    <img src="com-chien-ga.jpg" alt="Cơm Chiên Gà Rán" width="200px">
+                    <button class="buy-now">Mua Ngay</button>
+                </div>
+            </div>
+            
+            <!-- Right Sidebar -->
+            <div class="right-sidebar">
+                <h2>Sản Phẩm Nổi Bật</h2>
+                <p>Cơm Chiên Hoàng Gia - 150,000 VNĐ</p>
+                <p>Cơm Chiên Thập Cẩm - 120,000 VNĐ</p>
+                <p>Cơm Chiên Tôm - 130,000 VNĐ</p>
+            </div>
+        </div>
+        
+        <script>
+            document.querySelectorAll('.buy-now').forEach(button => {
+                button.addEventListener('click', function() {
+                    alert('Bạn đã bấm Mua Ngay! Sản phẩm sẽ được thêm vào giỏ hàng.');
+                });
+            });
+        </script>        
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Liên hệ qua số điện thoại: 1234-567-890 | Địa chỉ: 123 Tiệm Cơm Chiên, Đà Nẵng</p>
+        </div>
+    </div>
+</body>
+</html>

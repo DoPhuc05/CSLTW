@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+    <meta charset="utf-8">
+    <title>Thiết kế layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #wrapper {
+            width: 100vw; /* Full width of the viewport */
+            height: 100vh; /* Full height of the viewport */
+            margin: 0 auto;
+            color: #FFF;
+        }
+
+        #header {
+            width: 100%;
+            height: 10vh; /* 10% of the viewport height */
+            background-color: #F39;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu {
+            width: 100%;
+            height: 7vh;
+            background-color: #09F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #left {
+            width: 20%;
+            height: 70vh;
+            background-color: #9C6;
+            float: left;
+        }
+
+        #content {
+            width: 60%;
+            height: 70vh;
+            background-color: #6C3;
+            float: left;
+        }
+
+        #right {
+            width: 20%;
+            height: 70vh;
+            background-color: #F96;
+            float: left;
+        }
+
+        #footer {
+            width: 100%;
+            height: 10vh;
+            background-color: #669;
+            clear: both;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">Header</div>
+        <div id="menu">Menu</div>
+        <div id="left">Left</div>
+        <div id="content">Content</div>
+        <div id="right">Right</div>
+        <div id="footer">Footer</div>
+    </div>
+
+
+</body></html>

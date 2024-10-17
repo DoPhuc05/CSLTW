@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Thay đổi phông chữ */
+}
+
+body {
+    background-color: #e9ecef; /* Màu nền sáng hơn */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Sắp xếp Logo và Banner trên cùng một hàng */
+.header-banner {
+    display: flex; /* Sử dụng flexbox cho bố cục */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.logo {
+    width: 25%; /* Chiều rộng của logo là 25% */
+    background-size: contain; /* Giữ tỷ lệ của logo */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    padding: 20px;
+}
+
+.banner {
+    width: 75%; /* Chiều rộng của banner là 75% */
+    display: flex; /* Sử dụng flexbox cho banner */
+    justify-content: center; /* Căn giữa nội dung trong banner */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 250px; /* Chiều cao của banner, điều chỉnh theo nhu cầu */
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Gradient nền */
+    border-radius: 15px; /* Bo góc */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+}
+
+h1{
+    font-size: 3em; /* Kích thước chữ lớn hơn */
+    color: white; /* Màu chữ */
+    text-align: center; /* Căn giữa chữ */
+    font-weight: bold; /* Đậm chữ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Đổ bóng cho chữ */
+}
+/* Liên kết đầu trang */
+.head-link {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0056b3; /* Màu sắc tối hơn */
+    padding: 15px 20px; /* Tăng khoảng cách */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Định dạng liên kết trong head-link */
+.head-link a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s; 
+}
+
+.head-link a:hover {
+    color: #ffcc00; 
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Sidebar */
+.left-sidebar, .right-sidebar {
+    width: 20%;
+    background-color: #f5deb3;
+    padding: 10px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Danh sách trong sidebar */
+.left-sidebar ul {
+    list-style-type: none;
+}
+
+.left-sidebar ul li {
+    padding: 10px 0;
+}
+
+.left-sidebar ul li a {
+    text-decoration: none;
+    color: #8b4513;
+    font-size: 1.1em;
+    transition: color 0.3s; 
+}
+
+.left-sidebar ul li a:hover {
+    color: #ff6347; 
+}
+
+/* Nội dung chính */
+.content {
+    width: 55%;
+    background-color: #f0ffff;
+    padding: 20px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sản phẩm */
+.product {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    margin: 10px 0;
+}
+
+/* Nút mua hàng */
+.buy-now {
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.buy-now:hover {
+    background-color: #28a745; 
+}
+
+/* Footer */
+.footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0; 
+    width: 100%; 
+    margin-top: 20px; 
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Mẫu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas: 
+        "header header header"
+        "nav section aside"
+        "footer footer footer";
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    header {
+      grid-area: header;
+      background-color: orange;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      grid-area: nav;
+      background-color: #ccc;
+      padding: 20px;
+    }
+
+    section {
+      grid-area: section;
+      background-color: #eee;
+      padding: 20px;
+    }
+
+    aside {
+      grid-area: aside;
+      background-color: #ccc;
+      padding: 20px;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: orange;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    article {
+      background-color: #fff;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    /* Các thẻ con trong section */
+    section header, section footer {
+      background-color: #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>Header</header>
+    
+    <nav>Navigation</nav>
+
+    <section>
+      <header>Section Header</header>
+      <article>Bài viết trong section</article>
+      <footer>Section Footer</footer>
+    </section>
+
+    <aside>Aside</aside>
+
+    <footer>Footer</footer>
+  </div>
+
+</body>
+</html>
