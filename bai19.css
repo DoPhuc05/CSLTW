@@ -1,0 +1,165 @@
+/* Nền cho menu */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-top: 20px;
+}
+
+p {
+    color: #6b6b6b;
+    line-height: 1.5;
+}
+
+ul {
+    margin-top: 10px;
+    color: #6b6b6b;
+}
+
+.item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    border-radius: 8px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.bg-blue-600 {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.bg-blue-600:hover {
+    background-color: #2563eb;
+}
+
+.bg-green-600 {
+    background-color: #22c55e;
+    color: white;
+}
+
+.bg-green-600:hover {
+    background-color: #16a34a;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.text-lg {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Style cho các nút điều hướng */
+.nav-item {
+    color: black; /* Màu chữ đen */
+    text-align: center; /* Canh giữa chữ */
+    padding: 15px 20px; /* Padding cho nút */
+    border-radius: 5px; /* Bo tròn góc cho nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+/* Hiệu ứng khi hover nút điều hướng */
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Nền khi hover */
+}
+
+.sidebar {
+    max-width: 350px; /* Giới hạn chiều rộng cho sidebar */
+}
+
+.menu-section,
+.contact-section {
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+    overflow: hidden; /* Đảm bảo hình ảnh không vượt ra ngoài khối */
+}
+
+.menu-header,
+.contact-header {
+    background-color: #e6e6fa; /* Màu nền cho tiêu đề */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+    cursor: pointer; /* Con trỏ chuột thay đổi khi hover */
+}
+
+.menu-header:hover,
+.contact-header:hover {
+    background-color: #d3d3f7; /* Màu nền khi hover */
+}
+
+.sidebar-link {
+    display: block; /* Hiển thị các liên kết thành khối */
+    padding: 10px; /* Khoảng cách xung quanh liên kết */
+    color: #6b46c1; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.sidebar-link:hover {
+    background-color: #6b46c1; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+}
+
+.contact-section {
+    background-color: #f3e8ff; /* Màu nền cho phần liên hệ */
+}
+
+.contact-section h3 {
+    color: #4a4a4a; /* Màu tiêu đề */
+}
+
+/* Ẩn nội dung khi không có sự kiện */
+.hidden {
+    display: none;
+}
+
+/* Hiển thị nội dung khi được nhắm đến */
+#menu:target,
+#contact:target {
+    display: block; /* Hiển thị nội dung khi nhấp vào liên kết */
+}
+
+
+
+
