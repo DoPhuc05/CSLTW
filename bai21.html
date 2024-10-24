@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Công ty du lịch cung cấp các gói tour và dịch vụ du lịch tốt nhất.">
+    <meta name="keywords" content="du lịch, tour, dịch vụ du lịch, khám phá">
+    <meta name="author" content="Công Ty Du Lịch Torus">
+    <link rel="stylesheet" href="bai21.css">
+
+    <title>Torus Travel - Khám Phá Thế Giới</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Torus Travel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#services">Dịch Vụ</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Chào Mừng Đến Với Torus Travel</h1>
+        <p>Khám phá thế giới với những gói tour độc đáo và dịch vụ hoàn hảo.</p>
+        <a href="#about" class="btn">Tìm Hiểu Thêm</a>
+    </section>
+
+    <!-- Giới Thiệu -->
+    <section id="about">
+        <h2>Giới Thiệu Về Torus Travel</h2>
+        <p>Chúng tôi cung cấp dịch vụ du lịch chất lượng cao, giúp bạn khám phá những điểm đến tuyệt vời và trải nghiệm văn hóa đa dạng.</p>
+        <a href="#services" class="btn">Khám Phá Dịch Vụ Của Chúng Tôi</a>
+    </section>
+
+    <!-- Dịch Vụ -->
+    <section id="services">
+        <h2>Dịch Vụ Của Chúng Tôi</h2>
+        <div class="service">
+            <img src="tour.jpg" alt="Tour Du Lịch">
+            <h3>Tour Du Lịch</h3>
+            <p>Chúng tôi cung cấp nhiều tour du lịch hấp dẫn với giá cả phải chăng, từ những chuyến đi ngắn ngày đến các hành trình dài ngày.</p>
+            <a href="tour-details.html" class="btn">Tìm Hiểu Thêm</a>
+        </div>
+        <div class="service">
+            <img src="guide.jpg" alt="Hướng Dẫn Viên">
+            <h3>Hướng Dẫn Viên Du Lịch</h3>
+            <p>Đội ngũ hướng dẫn viên chuyên nghiệp của chúng tôi sẽ đồng hành cùng bạn, mang đến những trải nghiệm thú vị và an toàn.</p>
+            <a href="guide-details.html" class="btn">Tìm Hiểu Thêm</a>
+        </div>
+    </section>
+
+    <!-- Liên Hệ -->
+    <section id="contact">
+        <h2>Liên Hệ Với Chúng Tôi</h2>
+        <p>Email: contact@torustravel.com</p>
+        <p>Điện thoại: (0123) 456-789</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Họ Tên:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Tin Nhắn:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Gửi">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Torus Travel. Tất cả các quyền được bảo lưu.</p>
+        <div class="social">
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
